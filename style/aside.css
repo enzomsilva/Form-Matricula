@@ -1,0 +1,42 @@
+aside {
+    padding: 4rem;
+    background-color: var(--surface-secondary);
+
+    .asidecontainer {
+        max-width: 31rem;
+
+        header + div {
+            /* img div */
+            max-width: 31rem;
+        }
+    }
+}
+aside header {
+    margin-bottom: 2rem;
+
+
+    div:first-of-type {
+        font-family: "Schoolbell";
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.25rem;
+
+        h2 {
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+    }
+    
+    div + h2 {
+        color: var(--text-primary);
+        font-weight: 600;
+        font: 600 40px/1.25 var(--font-family);
+        margin-bottom: .5rem;
+
+        span {
+            color: var(--text-highlight);
+        }
+    }
+
+}

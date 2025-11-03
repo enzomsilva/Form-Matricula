@@ -15,10 +15,22 @@
     --text-tertiary: #8F8881;
     --text-highlight: #E43A12;
     --semantic-error: #DC2626;
+    --stroke-highlight: #F3541C;
+    --surface-disabled: #E7E5E4;
+    --stroke-color-default: #D6D3D1;
 
 
     /* -- fonts -- */
     --font-family: 'Poppins', 'sans-serif';
     --text: 400 1rem/1.5 var(--font-family);
     --text-sm: 400 0.875rem/1.4 var(--font-family);
+}
+
+body {
+    color: var(--text-secondary);
+    font: var(--text);
+
+    img {
+        max-width: 100%;
+    }
 }

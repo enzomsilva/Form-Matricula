@@ -1,0 +1,26 @@
+main {
+    overflow: auto;
+    padding: 4rem;
+    
+
+
+    .main-container {
+        max-width: 33rem;
+        margin-left: auto; /*The element will take as much distance as it's possible from the left*/
+
+        & > div {
+            display:inline-flex;
+            gap: .5rem;
+            margin-bottom: 1.5rem;
+        } /*Button style*/
+        header {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+h1 {
+    color: var(--text-primary);
+    font: 600 1.5rem/1.25 var(--font-family); /*font-weight font-size/line-height font-family*/
+    margin-bottom: .5rem;
+}
