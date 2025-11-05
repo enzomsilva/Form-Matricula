@@ -4,7 +4,8 @@ select {
     appearance: none;
     width: 100%;
     border-radius: .5rem;
-    border: 1px solid #D6D3D1;
+    border: 2px solid transparent;
+    outline: 1px solid var(--stroke-color-default);
     padding: .75rem 1rem;
     font: var(--text);
 }
@@ -20,7 +21,7 @@ textarea:focus,
 input[type="date"]:focus-within {
     /*This focus-within property makes the picker avaible to select too, making it's parent border orange when it's focused -> by the mouse or when navigating by tab (the key) through the page*/
     outline: .25rem solid var(--surface-secondary);
-    border: .125rem solid var(--stroke-highlight);
+    border-color: var(--stroke-highlight);
 }
 
 input[type="date"] {
@@ -132,7 +133,8 @@ input {
 }
 
 .radio-inner {
-    border: 1px solid var(--stroke-color-default);
+    outline: 1px solid var(--stroke-color-default);
+    border: .125rem solid transparent;
     border-radius: .5rem;
 
     display: grid;
@@ -157,6 +159,10 @@ input {
         position: absolute;
         top: .5rem;
         left: .5rem;
+    }
+
+    label {
+        color:#000000CC;
     }
 
     &:hover, &:focus-within {
@@ -209,4 +215,40 @@ input {
         text-decoration: none;
         color: var(--text-highlight)
     }
+}
+
+/* ----Styling the buttons */
+
+.actions-buttons {
+    display: flex;
+    gap: 1rem;
+
+    & .button-primary {
+        padding: .75rem 1.5rem;
+        border-radius: .5rem;
+        background-color: #E43A12;
+        border: 1px solid #E43A12;
+        color:#FFFFFF;
+        font: 500 1rem/1.5rem var(--font-family);
+
+        &:hover, :focus {
+            background-color: #F3541C;
+        }
+    }
+
+    & .button-secondary {
+        border-radius: .5rem;
+        border: 1px solid var(--text-highlight);
+        padding: .75rem 1.5rem;
+        margin-left: auto;
+        font: 500 1rem/1.5rem var(--font-family);
+        background-color: var(--surface-color);
+        color: var(--text-highlight);
+
+        &:hover, :focus {
+            outline: 1px solid var(--stroke-highlight);
+        }
+    }
+
+
 }
