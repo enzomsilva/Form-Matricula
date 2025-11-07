@@ -26,7 +26,7 @@ input[type="date"]:focus-within {
 
 input[type="date"] {
     &::-webkit-calendar-picker-indicator {
-        background: url(/src/assets/icons/calendar-03.svg);
+        background: url(../../assets/icons/calendar-03.svg);
         width: 1.3rem;
         height: 1.3rem;
     }
@@ -35,7 +35,7 @@ input[type="date"] {
 }
 
 select {
-    background: url(/src/assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+    background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
 }
 
 textarea {
@@ -152,7 +152,7 @@ input {
     }
 
     .radio-image {
-        background-image: url(/src/assets/icons/circle.svg);
+        background-image: url(../../assets/icons/circle.svg);
         width: 1.5rem;
         height: 1.5rem;
 
@@ -169,7 +169,7 @@ input {
         border: 1px, solid, var(--stroke-highlight);
 
         & .radio-image {
-            background-image: url(/src/assets/icons/orange-circle.svg);
+            background-image: url(../../assets/icons/orange-circle.svg);
         }
     }
 
@@ -177,7 +177,7 @@ input {
         border: 2px, solid, var(--stroke-highlight);
 
         & .radio-image {
-            background-image: url(/src/assets/icons/checkmark-circle-01.svg);
+            background-image: url(../../assets/icons/checkmark-circle-01.svg);
         }
     }
 }
@@ -196,17 +196,17 @@ input {
 
     &:hover, &:focus-within {
         .checkbox-image {
-            background-image: url(/src/assets/icons/hovered-checkbox.svg);
+            background-image: url(../../assets/icons/hovered-checkbox.svg);
         }
     }
 
     &:has(input:checked) {
         .checkbox-image {
-            background-image: url(/src/assets/icons/checkbox-checked.svg);
+            background-image: url(../../assets/icons/checkbox-checked.svg);
         }
     }
     & .checkbox-image {
-        background: no-repeat url(/src/assets/icons/checkbox.svg);
+        background: no-repeat url(../../assets/icons/checkbox.svg);
         height: 1.5rem;
         width: 1.5rem;
     }
